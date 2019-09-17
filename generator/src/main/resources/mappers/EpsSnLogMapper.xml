@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.froeasy.wpc.mapper.EpsSnLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="net.froeasy.wpc.po.EpsSnLog">
+        <id column="ID" property="id" />
+        <result column="SN_ID" property="snId" />
+        <result column="CHANGE_STATUS" property="changeStatus" />
+        <result column="HANDLE_DATE" property="handleDate" />
+        <result column="HANDLE_USER" property="handleUser" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, SN_ID, CHANGE_STATUS, HANDLE_DATE, HANDLE_USER
+    </sql>
+
+</mapper>
